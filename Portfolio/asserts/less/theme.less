@@ -5,14 +5,16 @@
 @secondary-color: #23d2e2;
 
 #colors() {
-    primary: #615dfa;
-    primaryLight: #8b88ff;
-    secondary: #23d2e2;
+    primary: #23d2e2;
+    secondary: #615dfa;
+    tertiary: #8b88ff;
     paper: #f8f8fb;
     textMain: #3e3f5e;
     textLight: #8f91ac;
     dimText: #adafca;
     bg: #fff;
+    dimBg: #efefef;
+    darkBg: #3e3f5e;
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -24,4 +26,6 @@
 // Large devices (desktops, 992px and up)
 @lg: ~"(min-width: 992px) and (max-width: 1199.98px)";
 // Extra large devices (large desktops, 1200px and up)
-@xl: ~"(min-width: 1200px)";
+@xl: ~"(min-width: 1200px) and (max-width: 1440px)";
+// Double Extra large devices (High res, 1200px and up)
+@xxl: ~"(min-width: 1440px)";
