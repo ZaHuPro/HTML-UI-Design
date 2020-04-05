@@ -1,1 +1,107 @@
 @import './theme.less';
+
+.desktop-header {
+    background-color: blue;
+    position: fixed;
+    min-height: 100vh;
+    width: 110px;
+    border-right: solid 1px rgba(255, 255, 255, 0.1);
+    background: #353353;
+    left: 0px;
+    overflow: hidden;
+    padding: 40px;
+    z-index: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+    .vertical-menu {
+        list-style: none;
+        padding: 0;
+        margin-top: 100px;
+        margin-bottom: 0;
+
+        li {
+            margin-bottom: 20px;
+        }
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+
+        .nav-link {
+            display: initial;
+            padding: 0;
+            font-size: 24px;
+            font-weight: 700;
+            width: 100%;
+            text-decoration: none;
+            color: #fff;
+
+            &:hover {
+                color: #FFD15C;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        .active {
+            color: #FFD15C;
+        }
+    }
+}
+
+.content {
+
+    margin-left: 110px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+    .home {
+        background: #353353;
+        min-height: 100vh;
+        padding: 0px;
+
+        .intro {
+            text-align: center;
+            max-width: 540px;
+            margin: auto;
+
+            h1 {
+                color: #FFF;
+                font-size: 36px;
+            }
+
+            span {
+                color: #FFF;
+                font-size: 16px;
+            }
+
+            .social-icons {
+                li {
+                    margin-right: 1.5rem;
+
+                    a {
+                        color: #fff;
+                        font-size: 22px;
+
+                        &:hover {
+                            color: #FFD15C;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 0rem;
+                    }
+                }
+
+
+            }
+        }
+    }
+}
